@@ -1,0 +1,81 @@
+---
+import Section from "@/components/Section.astro"
+import Intro from "@/components/sections/Intro.svelte"
+import Layout from "@/layouts/layout.astro"
+---
+
+<Layout>
+  <section
+    class="relative flex min-h-screen flex-col items-center justify-center overflow-visible p-24"
+  >
+    <div
+      class="absolute right-[-15%] top-[-48%] rounded-full bg-white p-16 opacity-50 blur-[256px] sm:p-20 md:p-40 xl:p-64"
+    >
+      &nbsp;
+    </div>
+
+    <div
+      class="absolute bottom-[-50%] left-[-30%] rounded-full bg-white p-16 opacity-50 blur-[256px] sm:p-20 md:p-40 xl:p-64"
+    >
+      &nbsp;
+    </div>
+
+    <div class="py-6"></div>
+
+    <p class="text-center text-5xl font-semibold leading-tight">
+      I Code and Design,<br />And I Write some things.
+    </p>
+    <p
+      class="mt-8 max-w-[35rem] text-balance text-center text-base text-neutral-400"
+    >
+      Hello, I'm SongHun Cho and this is my personal portfolio website. I'm into
+      web development, algorithmns, and much more. I also design my projects
+      like websites or some.
+    </p>
+
+    <div class="py-6"></div>
+
+    <div class="py-12"></div>
+
+    <section class="relative flex flex-row items-center justify-center gap-10">
+      <article class="relative h-[21rem] w-64 rounded-xl bg-black p-4">
+        <!-- <p
+          class="absolute -bottom-6 left-0 text-xs font-medium text-neutral-700"
+        >
+          Some of my projects
+        </p> -->
+      </article>
+      <article class="-mb-20 h-80 w-96 rounded-xl bg-black p-4"></article>
+      <article class="h-72 w-56 rounded-xl bg-black p-4"></article>
+    </section>
+
+    <!-- TODO: Add some revealing (down to up) animations in turn when loaded -->
+  </section>
+
+  <Section class="flex flex-col items-center justify-center pb-20 pt-40">
+    <Intro client:load />
+    <!-- <div class="py-8"></div> -->
+  </Section>
+
+  <Section class="flex min-h-[80vh] flex-col py-32">
+    <p class="text-[2.3rem] font-semibold">I'm a sucker for these</p>
+    <div class="mt-8 flex flex-row items-center justify-stretch gap-8">
+      <section class="flex flex-col gap-8">
+        <article class="flex-1 rounded-lg bg-neutral-900">Helo</article>
+        <article class="min-h-3.5 rounded-lg bg-neutral-900">Helo</article>
+      </section>
+      <section class="flex flex-1 flex-col gap-8">
+        <article class="flex-1 rounded-lg bg-neutral-900">Helo</article>
+        <article class="min-h-3.5 rounded-lg bg-neutral-900">Helo</article>
+      </section>
+    </div>
+  </Section>
+
+  <Section class="flex min-h-[50vh] flex-col py-32">
+    <p class="text-[2.3rem] font-semibold">Careers</p>
+    <p class="mt-4 text-base text-neutral-400">
+      I haven't even graduated high school yet but I do want to participate in
+      some competitions.
+    </p>
+  </Section>
+</Layout>
